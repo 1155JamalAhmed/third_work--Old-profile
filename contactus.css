@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+.contactUsLine{
+    background-color: rgb(130, 177, 36);
+    padding: 10px;
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: -2px -1px 5px grey;
+}
+
+/* =============== main container ===========*/
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* contain form*/
+.formContainer{
+    margin: 10px 0px 10px 0px;
+    flex-basis: 50%;
+    background-color: rgb(238, 255, 234);
+    box-shadow: 1px 1px 10px rgb(153, 153, 153);
+}
+
+.table{
+    margin: 50px 50px 50px 100px;
+}
+.firstCol{
+    text-align: right;
+}
+.table .td{
+    padding: 5px;
+}
+
+input{
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+input:focus{
+    border-radius: 0px;
+}
+
+textarea{    
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.send{
+    margin-left: 250px;
+    padding: 15px;
+    border: 2px solid rgb(98, 143, 8);
+    border-radius: 18px;
+    box-shadow: 2px -1px 5px gray;
+    background-color: rgb(130, 177, 36);
+    color: white;
+    font-weight: bold;
+}
+.send:focus{
+    margin-left: 250px;
+    padding: 15px;
+    border: 2px solid rgb(98, 143, 8);
+    border-radius: 18px;
+    box-shadow: 2px -1px 5px gray;
+    background-color: rgb(130, 177, 36);
+    color: white;
+    font-weight: bold;
+}
+.send:hover{
+    background-color: rgb(98, 143, 8);
+}
+/* side area*/
+.sideArea{
+    flex-basis: 35%;
+    background-color: rgb(238, 255, 234);
+    box-shadow: 1px 1px 10px rgb(153, 153, 153);
+    height: 300px;
+    margin: 10px 0px 10px 0px;
+}
+
+.contactTable{
+    margin: 20px;
+}
+
+.tdcontact{
+    padding: 10px;
+}
+.email{
+    width: 40%;
+    padding: 15px;
+    border: 2px solid rgb(98, 143, 8);
+    border-radius: 18px;
+    box-shadow: 2px -1px 5px gray;
+    background-color: rgb(130, 177, 36);
+    color: white;
+    font-weight: bold;
+    margin-left: 0 auto;
+}
+.email:hover{
+    background-color: rgb(98, 143, 8);
+}
+
+footer{
+    margin: 10px 0px 0px 0px;
+    padding: 20px;
+    background-color: rgb(130, 177, 36);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: -2px -1px 5px grey;
+    max-width: 100%;
+}
+
+@media screen and (max-width:860px){
+    .sideArea{
+        flex-basis: 100%;
+    }
+    .formContainer{
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    
+    .table{
+        margin: 50px 0px 50px 0px;
+    }
+}
+@media screen and (max-width:360px){
+    
+    .table{
+        margin: 50px 0px 50px 0px;
+    }
+    .send{
+        margin: 0px 0px 0px 61px;
+    }
+    textarea{
+        width: 95%;
+    }
+}

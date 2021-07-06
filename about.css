@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+.contactUsLine{
+    background-color: rgb(130, 177, 36);
+    padding: 10px;
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: -2px -1px 5px grey;
+}
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.commonInIntroDescrip{
+    border: 2px solid rgb(59, 88, 0);
+    margin: 30px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+/* description area */
+.descrip{
+    flex-basis: 50%;
+    background-color: rgb(238, 255, 234);
+    box-shadow: 1px 1px 10px rgb(153, 153, 153);
+}
+.objective p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.table{
+    width: 100%;
+}
+.table,.tr,.td,.th{
+    text-align: left;
+    border: 1px solid rgb(130, 177, 36);
+    border-collapse: collapse;
+}
+.td,.th{
+    padding: 10px;
+}
+.tr:nth-child(odd){
+    background-color: rgb(219, 255, 213);
+}
+.tr:hover{
+    background-color: rgb(188, 253, 176);   
+}
+
+/* intro section started */
+
+.intro{
+    flex-basis: 30%;
+    background-color: rgb(238, 255, 234);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-height: 250px;
+    box-shadow: 1px 1px 10px rgb(153, 153, 153);
+}
+
+.imgOfOwner{
+    flex-basis: 40px;
+}
+.descriptionOfOwner{
+    flex-basis: 50%;
+    margin-left: 5px;
+}
+.side_img{
+    width: 100px;
+    border: 3px solid rgb(59, 88, 0);
+    border-radius: 50%;
+}
+
+.introDes{
+    flex-basis: 90%;
+}
+
+li{
+    line-height: 24px;
+}
+footer{
+    margin: 10px 0px 0px 0px;
+    padding: 20px;
+    background-color: rgb(130, 177, 36);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: -2px -1px 5px grey;
+}
+
+
+@media screen and (max-width:1000px){
+    .intro{
+        max-height: 270px;
+    }
+}
+@media screen and (max-width:860px){
+    .intro{
+        max-height: 290px;
+    }
+}
+@media screen and (max-width:800px){
+    .intro{
+        flex-basis: 100%;
+        max-height: 350px;
+    } 
+    .introDes{
+        margin: 5px 0px 5px 100px;
+    }
+    .descrip{
+        flex-basis: 100%;
+        order: 2;
+    }
+}
